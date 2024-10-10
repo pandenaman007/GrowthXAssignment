@@ -1,0 +1,21 @@
+2. **Structure and Functionality:**
+    - There should be two types of users: **Admin** and **User**.
+    - **Users** can:
+        - Register and log in.
+        - Upload assignments.
+    - **Admins** can:
+        - Register and log in.
+        - View assignments tagged to them.
+        - Accept or reject assignments.
+3. **Endpoints:**
+    - **User Endpoints:**
+        - `POST /register` - Register a new user.
+        - `POST /login` - User login.
+        - `POST /upload` - Upload an assignment.
+        - `GET /admins`- fetch all admins
+    - **Admin Endpoints:**
+        - `POST /register` - Register a new admin.
+        - `POST /login` - Admin login.
+        - `GET /assignments` - View assignments tagged to the admin.
+        - `POST /assignments/:id/accept` - Accept an assignment.
+        - `POST /assignments/:id/reject` - Reject an assignment.
